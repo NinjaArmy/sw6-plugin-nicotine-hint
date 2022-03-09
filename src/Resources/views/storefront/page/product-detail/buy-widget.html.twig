@@ -1,0 +1,21 @@
+{% sw_extends '@Storefront/storefront/page/product-detail/buy-widget.html.twig' %}
+{% block page_product_detail_ordernumber_container %}
+	{{ parent() }}
+	{% if (page.product.customFields["custom_nicotine_hint"])  %}
+
+		{% set headline = config('NicotineHint.config.headline') %}
+		{% set description = config('NicotineHint.config.description') %}
+		{% set textColor = config('NicotineHint.config.textColor') %}
+		{% set borderColor = config('NicotineHint.config.borderColor') %}
+
+		<div class="ninja-nicotine-hint" style=" border-top: 1px solid {{borderColor}};">
+			<img width="100px" src="{{ asset('bundles/nicotinehint/nikotin.svg', 'asset') }}">
+			<div style="color: {{textColor}}">
+				<p>
+					<b>{{headline}}</b>
+				</p>
+				<p>{{description}}</p>
+			</div>
+		</div>
+	{% endif %}
+{% endblock %}

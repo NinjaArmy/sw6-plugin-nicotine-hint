@@ -1,0 +1,30 @@
+{
+    "name": "ninja/nicotine-hint",
+    "description": "Displays nicotine hint on product detail page",
+    "version": "v1.0.0",
+    "type": "shopware-platform-plugin",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ninja Army (Joschi Mehta)"
+        }
+    ],
+    "require": {
+        "shopware/core": "*",
+        "shopware/administration": "*",
+        "shopware/storefront": "*"
+    },
+    "extra": {
+        "shopware-plugin-class": "NINJA\\NicotineHint\\NicotineHint",
+        "copyright": "(c) Ninja Army",
+        "label": {
+            "de-DE": "Nikotin Hinweis",
+            "en-GB": "Nicotine Hint"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "NINJA\\NicotineHint\\": "src/"
+        }
+    }
+}

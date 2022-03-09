@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://raw.githubusercontent.com/shopware/platform/master/src/Core/System/SystemConfig/Schema/config.xsd">
+	<card>
+		<title>Configuration</title>
+		<title lang="de-DE">Konfiguration</title>
+
+        <input-field type="colorpicker">
+            <name>textColor</name>
+            <label>Text Color</label>
+            <label lang="de-DE">Textfarbe</label>
+        </input-field>
+
+        <input-field type="text">
+            <name>headline</name>
+            <label>Headline Text</label>
+            <label lang="de-DE">Überschrifts-Text (fett)</label>
+            <placeholder>This product contains nicotine</placeholder>
+            <placeholder lang="de-DE">Dieses Produkt enthält Nikotin..</placeholder>
+        </input-field>
+
+		<input-field type="text">
+            <name>description</name>
+            <label>Description Text</label>
+            <label lang="de-DE">Beschreibungstext</label>
+        </input-field>
+
+        <input-field type="colorpicker">
+            <name>borderColor</name>
+            <label>Border Color</label>
+            <label lang="de-DE">Rahmenfarbe</label>
+        </input-field>
+	</card>
+</config>
